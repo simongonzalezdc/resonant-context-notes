@@ -1,0 +1,19 @@
+# Context engineering for local-model agents — measured
+
+> Notes for people building agent harnesses on their own hardware: a 27B-class reasoning model served by llama.cpp or anything like it, driving a tool-using loop, tokens slow, prefill slower. These notes restate the measured results of KyaniteLabs/context-kit for harness builders, with every number's validity label intact — CLEAN (no known confound), DIRECTIONAL (ordering claimed, magnitude soft), ARITHMETIC (deterministic math on measured inputs) — so you can decide what to adopt without re-reading a whole repo.
+
+## Canonical links
+
+- This repo (the notes): https://github.com/simongonzalezdc/resonant-context-notes
+- context-kit (canonical upstream, the instrument): https://github.com/KyaniteLabs/context-kit
+
+## Key facts
+
+- License: MIT.
+- Every number verified against the canonical repo with zero mismatches; every number keeps its validity label.
+- The canonical repo holds the code, the experiments, and the rig every number was measured on; these notes re-measure nothing.
+- Covers context diets, re-reads, token math, integration laws, and an honest gap section.
+
+## Relationship
+
+Community gift by Kyanite Labs for ResonantOS — canonical upstream: https://github.com/KyaniteLabs/context-kit; these notes are non-canonical and re-brand nothing. If the notes and the canonical repo disagree, the canonical repo wins.
